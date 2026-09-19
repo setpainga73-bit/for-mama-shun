@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="my">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0e27" />
+    <title>မမရဲ့ အဖြေ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="reply-page">
+    <div id="hearts-bg" aria-hidden="true"></div>
+    <main class="page-shell container">
+      <section class="reply-card fade-in">
+        <header class="reply-intro">
+          <p class="eyebrow">နောက်ဆုံးတစ်ခု</p>
+          <div class="heart-mark" aria-hidden="true">♡</div>
+          <h1>မမ … မောင့်ကို ဖြေပေးပါ</h1>
+          <p>အောက်က မေးခွန်းလေးတွေကို ဖြေပေးပါနော်</p>
+        </header>
+        <form id="answer-form" class="answer-form">
+          <article class="slider-card" data-slider="s1">
+            <h2>မောင့်အပေါ် ဘယ်လောက် စိတ်ဝင်စားလဲ?</h2>
+            <p class="slider-mood" id="mood-s1">မစိတ်ဝင်စားသေးဘူး</p>
+            <div class="slider-row">
+              <span>0%</span
+              ><input
+                id="s1"
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                aria-label="စိတ်ဝင်စားမှု"
+              /><span>100%</span>
+            </div>
+            <output class="slider-value" for="s1">0%</output>
+          </article>
+          <article class="slider-card" data-slider="s2">
+            <h2>ဘယ်လောက်ထိ ယုံကြည်လဲ?</h2>
+            <p class="slider-mood" id="mood-s2">မယုံသေးဘူး</p>
+            <div class="slider-row">
+              <span>0%</span
+              ><input
+                id="s2"
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                aria-label="ယုံကြည်မှု"
+              /><span>100%</span>
+            </div>
+            <output class="slider-value" for="s2">0%</output>
+          </article>
+          <article class="slider-card" data-slider="s3">
+            <h2>ချစ်တယ်ပြောဖို့ ဘယ်လောက်ထိ ရှိလဲ?</h2>
+            <p class="slider-mood" id="mood-s3">မချစ်သေးဘူး</p>
+            <div class="slider-row">
+              <span>0%</span
+              ><input
+                id="s3"
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                aria-label="ချစ်မှု"
+              /><span>100%</span>
+            </div>
+            <output class="slider-value" for="s3">0%</output>
+          </article>
+          <article class="slider-card" data-slider="s4">
+            <h2>ရွေးချယ်ထားဖို့ ဘယ်လောက်ထိ ရှိလဲ?</h2>
+            <p class="slider-mood" id="mood-s4">မရွေးသေးဘူး</p>
+            <div class="slider-row">
+              <span>0%</span
+              ><input
+                id="s4"
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                aria-label="ရွေးချယ်မှု"
+              /><span>100%</span>
+            </div>
+            <output class="slider-value" for="s4">0%</output>
+          </article>
+          <button class="btn submit-btn" id="submit-btn" type="submit">
+            ပို့မယ်
+          </button>
+        </form>
+        <section class="result-area" id="result-area" aria-live="polite" hidden>
+          <article class="result-card" id="resultCard">
+            <div class="result-stars" aria-hidden="true">✦ ✧ ✦</div>
+            <h2>မမ ရဲ့ ခံစားချက်</h2>
+            <div class="result-bars">
+              <div class="result-bar-row">
+                <span>စိတ်ဝင်စားမှု</span>
+                <div class="bar-track"><i id="bar-s1"></i></div>
+                <strong id="result-s1">0%</strong>
+              </div>
+              <div class="result-bar-row">
+                <span>ယုံကြည်မှု</span>
+                <div class="bar-track"><i id="bar-s2"></i></div>
+                <strong id="result-s2">0%</strong>
+              </div>
+              <div class="result-bar-row">
+                <span>ချစ်မှု</span>
+                <div class="bar-track"><i id="bar-s3"></i></div>
+                <strong id="result-s3">0%</strong>
+              </div>
+              <div class="result-bar-row">
+                <span>ရွေးချယ်မှု</span>
+                <div class="bar-track"><i id="bar-s4"></i></div>
+                <strong id="result-s4">0%</strong>
+              </div>
+            </div>
+            <div class="result-divider"></div>
+            <div class="average-row">
+              <span>ပျမ်းမျှ</span>
+              <div class="bar-track"><i id="bar-average"></i></div>
+              <strong id="result-average">0%</strong>
+            </div>
+            <p class="result-message" id="result-message"></p>
+            <p class="result-date">14.9.2026</p>
+            <div class="result-stars" aria-hidden="true">✦ ✧ ✦</div>
+          </article>
+          <div class="result-actions">
+            <button class="btn" id="download-btn" type="button">
+              Download လုပ်မယ်
+            </button>
+            <a
+              class="btn telegram-btn"
+              href="https://t.me/BEFORE_DA_KAMI"
+              target="_blank"
+              rel="noopener"
+              >Telegram မှာ စာပို့</a
+            >
+            <p class="result-hint">
+              📸 ဒီပုံလေးကို မောင့်ဆီ ပြန်ပို့ပေးပါနော် မမ 🥺
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="js/hearts-bg.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="js/reply.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="my">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0e27" />
+    <title>မမ … မောင် ပြောချင်တာရှိတယ်</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="game-page">
+    <div id="hearts-bg" aria-hidden="true"></div>
+    <main class="page-shell container">
+      <section class="game-card fade-in" aria-labelledby="game-message">
+        <span class="eyebrow">မောင့်ရင်ထဲက စကား</span>
+        <div class="heart-mark" aria-hidden="true">♡</div>
+        <h1 id="game-message">မမ … မောင် တစ်ခုလောက် မေးလို့ရမလား?</h1>
+        <p class="hint">အဖြေကို ရိုးရိုးလေးပဲ ပြောနော်</p>
+        <div class="game-actions" id="game-actions">
+          <button class="btn btn-primary" id="love-btn" type="button">
+            ချစ်တယ်
+          </button>
+          <button class="btn btn-ghost" id="no-love-btn" type="button">
+            မချစ်ဘူး
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="js/hearts-bg.js" defer></script>
+    <script src="js/game.js"></script>
+  </body>
+</html>

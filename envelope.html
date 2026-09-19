@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="my">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0e27" />
+    <title>မမ ဖတ်ပါ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="envelope-page">
+    <div id="hearts-bg" aria-hidden="true"></div>
+    <main class="page-shell container">
+      <section class="letter-stage fade-in">
+        <p class="eyebrow">မမ အတွက်</p>
+        <button
+          class="envelope"
+          id="envelope"
+          type="button"
+          aria-label="စာကို ဖတ်ရန် ဖွင့်ပါ"
+        >
+          <span class="envelope-paper">မမ ဖတ်ပါ</span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-front"></span>
+          <span class="seal">♡</span>
+        </button>
+        <p class="tap-note" id="tap-note">နှလုံးသားလေးနဲ့ ဖွင့်ကြည့်ပါ</p>
+        <article class="letter" id="letter" aria-live="polite"></article>
+        <a class="btn next-btn" id="letter-next" href="future.html"
+          >နောက်တစ်ဆင့် <span aria-hidden="true">➡</span></a
+        >
+      </section>
+    </main>
+    <script src="js/hearts-bg.js" defer></script>
+    <script src="js/envelope.js"></script>
+  </body>
+</html>

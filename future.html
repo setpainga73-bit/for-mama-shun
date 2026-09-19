@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="my">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0e27" />
+    <title>မမ နဲ့ မောင်</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="future-page">
+    <div id="hearts-bg" aria-hidden="true"></div>
+    <main class="page-shell container">
+      <header class="page-intro fade-in">
+        <p class="eyebrow">မမနဲ့ မောင်တို့ရဲ့ စကားလေးတွေ</p>
+        <h1>မှတ်မိသေးလား မမ</h1>
+      </header>
+      <section
+        class="future-section slideshow-section fade-in"
+        aria-labelledby="slideshow-title"
+      >
+        <p class="section-kicker">အမှတ်တရလေးတွေ</p>
+        <h2 id="slideshow-title">မမ အတွက် သိမ်းထားတဲ့ ပုံလေးတွေ</h2>
+        <div class="slideshow" id="slideshow" aria-live="polite">
+          <div class="slide-frame" id="slide-frame">
+            <div class="slide-placeholder" aria-hidden="true">📷</div>
+            <img id="slide-image" src="assets/images/slide-1.jpg" alt="" />
+          </div>
+          <p class="slide-caption" id="slide-caption"></p>
+          <div
+            class="slide-dots"
+            id="slide-dots"
+            role="tablist"
+            aria-label="ဓာတ်ပုံ ရွေးရန်"
+          ></div>
+        </div>
+      </section>
+      <section
+        class="future-section dream-section reveal slideshow-locked"
+        aria-labelledby="dream-title"
+      >
+        <p class="section-kicker">01 / မောင့်အိပ်မက်</p>
+        <h2 id="dream-title">မမ …</h2>
+        <div class="dream-copy" id="dream-copy"></div>
+      </section>
+      <section
+        class="future-section request-section reveal"
+        aria-labelledby="request-title"
+      >
+        <p class="section-kicker">02 / မောင့်ရဲ့ တောင်းဆိုမှု</p>
+        <h2 id="request-title">အခွင့်အရေးလေး တစ်ခုပေးပါ</h2>
+        <div class="request-copy" id="request-copy"></div>
+        <a class="btn next-btn" id="future-next" href="reply.html"
+          >နောက်တစ်ဆင့် <span aria-hidden="true">➡</span></a
+        >
+      </section>
+    </main>
+    <button
+      class="music-toggle"
+      id="music-toggle"
+      type="button"
+      aria-label="သီချင်း ဖွင့်ရန်"
+      aria-pressed="false"
+    >
+      🎵
+    </button>
+    <audio
+      id="romance-audio"
+      src="assets/music/Apple%20Of%20My%20Eye%20-%20TOXIX21%20(%20Prod.%20Frozy%20x%20M4ndume%20)%20(Lyrics).mp3"
+      loop
+      preload="none"
+    ></audio>
+    <script src="js/hearts-bg.js" defer></script>
+    <script src="js/future.js"></script>
+  </body>
+</html>
